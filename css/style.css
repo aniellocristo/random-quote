@@ -18,12 +18,91 @@ h3 {
 
 p {
   font-family: 'Philosopher', sans-serif;
-  font-size: 20px;
+}
+
+#quote {
   text-align: center;
+  font-size: 30px;
+}
+
+#author {
+  display: inline-block;
+  text-align: right;
+  font-size: 15px;
 }
 
 #quote-block {
   background-color: rgb(211, 215, 219);
-  box-shadow: 0px 20px 34px -8px rgba(0,0,0,0.75);
+  border: rgb(255, 255, 255) solid 10px;
   padding: 20px;
+  margin: 100px auto;
+}
+
+.control {
+  display: flex;
+}
+
+.last-line {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/*Button Style*/
+.shell {
+  position: relative;
+  margin: 0 4px;
+}
+
+.button1 {
+  width: 30px;
+}
+
+.hover1 {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.button2 {
+  width: 30px;
+}
+
+.hover2 {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 600px) {
+
+  #quote-block {
+    max-width: 80%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  #quote-block {
+    max-width: 60%;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  #quote-block {
+    max-width: 40%;
+  }
+
 }
