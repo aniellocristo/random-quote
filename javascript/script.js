@@ -45,7 +45,8 @@ $(document).ready(function(){
   }, 1000);
 
   $("#tweet").on("click", function(){
-    window.open("https://twitter.com/intent/tweet?text="+quote);
+    var tweet = "https://twitter.com/intent/tweet?text="+quote;
+    window.open(tweet);
   });
 
 });
