@@ -16,21 +16,21 @@ $(document).ready(function(){
   });
 
   // Button Hover Effect
-  $(".button1").mouseover(function(){
-    $(".hover1").show();
-  });
-
-  $(".button1").mouseleave(function(){
-    $(".hover1").hide();
-  });
-
-  $(".button2").mouseover(function(){
-    $(".hover2").show();
-  });
-
-  $(".button2").mouseleave(function(){
-    $(".hover2").hide();
-  });
+  // $(".button1").mouseover(function(){
+  //   $(".hover1").show();
+  // });
+  //
+  // $(".button1").mouseleave(function(){
+  //   $(".hover1").hide();
+  // });
+  //
+  // $(".button2").mouseover(function(){
+  //   $(".hover2").show();
+  // });
+  //
+  // $(".button2").mouseleave(function(){
+  //   $(".hover2").hide();
+  // });
 
   //RefreshQuote Function
   $("#refresh").click (function(){
