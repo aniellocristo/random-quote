@@ -6,7 +6,7 @@ $(document).ready(function(){
       type: 'GET',
       dataType: 'json',
       success: function(data) {
-        $("#quote").html(data.quote);
+        $("#quote").html('"'+data.quote+'"');
         $("#author").html("- " + data.author);
        },
       error: function(err) { alert(err); },
@@ -15,8 +15,7 @@ $(document).ready(function(){
       }
   });
 
-
-  // Button Switch
+  // Button Hover Effect
   $(".button1").mouseover(function(){
     $(".hover1").show();
   });
@@ -31,6 +30,22 @@ $(document).ready(function(){
 
   $(".button2").mouseleave(function(){
     $(".hover2").hide();
+  });
+
+  //RefreshQuote Function
+  $("#refresh").click (function(){
+    location.reload();
+  });
+
+  //Twitter Function
+  var quote;
+
+  setTimeout(function(){
+    quote = document.querySelector('#quote').innerHTML
+  }, 1000);
+
+  $("#tweet").on("click", function(){
+    window.open("https://twitter.com/intent/tweet?text="+quote);
   });
 
 });
